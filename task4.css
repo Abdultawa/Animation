@@ -1,0 +1,39 @@
+div{
+    width: 40%;
+    height: 300px;
+    background-image: url(Screenshot\ \(11\).png);
+    animation-name: my;
+    animation-duration: 4s;
+    position: relative;
+    animation-timing-function: ease-in-out;
+    animation-delay: -2s;
+    animation-iteration-count: 10;
+
+}
+@keyframes my {
+    0%{background-image: url(Screenshot\ \(11\).png); /*left: 0px; top: 0px;*/}
+    25%{background-image: url(Screenshot\ \(10\).png);/*: 200px;top:0px; */}
+    50%{background-image: url(Screenshot\ \(9\).png); /*left: 200px; top: 200px;*/}
+    75%{background-image: url(Screenshot\ \(8\).png);/*left: 0px; top: 200px;*/}
+    100%{background-image: url(Screenshot\ \(7\).png);/* left: 0px; top: 0px;*/}
+}
+.loader{
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    border-bottom:16px solid #33729c; ;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    background-image: none;
+}
+@-webkit-keyframes spin{
+    0%{-webkit-transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
